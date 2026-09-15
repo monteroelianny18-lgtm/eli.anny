@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>heart of princes</title>
+    <title>Heart of Princes</title>
     <style>
+        /* Optimización general y tipografía legible */
         body {
             background-color: rgb(255, 208, 216);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Título en mayúsculas y adaptable a pantallas móviles */
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #4a4a4a;
+        }
+
+        /* Contenedor de texto con buen contraste y espaciado */
+        .mensaje {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        /* Corrección de ortografía visual en el diseño */
+        .destacado {
+            font-weight: bold;
+            color: #d14760;
+        }
+
+        /* Imagen totalmente responsiva (no se deforma) */
+        .imagen-adaptable {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <center style="font-size: 150px;">hello beautiful girl👑</center>
-       Hoy quiero expresarte lo feliz que estoy de que estes pasando
-        tu cumple numero 21 con migo. eres mi compañera de vida mas 
-        cercana que dios me ha regalado. mi amiga, mi HERMANA y una 
-        de esas personas que quiero muuucho en este planeta. Feliz cumple 
-        manita!!
-        <br>
-        <br>
-        Te quierooooo muuucho 
-        <br>
-        <br>
 
-        <img src="para mi manita.jpg" alt="">
+    <h1>HELLO BEAUTIFUL GIRL 👑</h1>
 
+    <div class="mensaje">
+        Hoy quiero expresarte lo feliz que estoy de que estés pasando 
+        tu cumple número 21 conmigo. Eres mi compañera de vida más 
+        cercana que Dios me ha regalado. Mi amiga, mi <span class="destacado">HERMANA</span> y una 
+        de esas personas que quiero muuucho en este planeta. <br><br>
+        ¡Feliz cumple manita! 🎉
+        <br><br>
+        Te quierooooo muuucho ❤️
+    </div>
+
+    <img src="para mi manita.jpg" alt="Para mi manita" class="imagen-adaptable">
 
 </body>
 </html>
